@@ -16,7 +16,12 @@ class MainActivity : AppCompatActivity() {
         setContentView(binding.root)
 
         var todoList = mutableListOf(
-            Todo("Example Todo", false)
+            Todo("Example Todo", false),
+            Todo("Another Todo", false),
+            Todo("More Todo", false),
+            Todo("Wow! Another Todo?", false),
+            Todo("What Am I gonna do with all these todos??", false)
+
         )
 
         val adapter = TodoAdapter(todoList)
